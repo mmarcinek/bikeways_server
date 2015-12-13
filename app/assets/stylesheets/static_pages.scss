@@ -1,0 +1,30 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 4em;
+  text-align: center;
+  padding-top: 200px;
+  color: white;
+  text-shadow: 1px 1px 9px #5f5f5f;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+header {
+  background-image: url(asset_path('header_img.jpg'));
+  width: auto;
+  height: 600px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
