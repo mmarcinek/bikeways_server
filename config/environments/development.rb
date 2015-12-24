@@ -14,8 +14,10 @@ Rails.application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.delivery_method = :smtp
   # action_mailer default url
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
