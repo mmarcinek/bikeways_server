@@ -19,6 +19,7 @@ gem 'jbuilder',                '2.2.3'
 gem 'sdoc',                    '0.4.0', group: :doc
 gem 'devise',                  '3.5.1'
 gem 'nokogiri',                '1.6.7'
+gem 'figaro',                  '1.1.1'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
