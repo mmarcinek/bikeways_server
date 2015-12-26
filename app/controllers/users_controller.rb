@@ -3,5 +3,5 @@ class UsersController < ApplicationController
   # user_signed_in? helper available
   # current_user available via Devise
   # user_session available via Devise
-
 end
+
