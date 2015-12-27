@@ -1,11 +1,5 @@
 class RegistrationsController < Devise::RegistrationsController
 
-  def create
-    @user = User.new(sign_up_params[:user])
-    super
-    ApplicationMailer.welcome_email(@user).deliver unless @user.invalid?
-  end
-
   private
 
   def sign_up_params

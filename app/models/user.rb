@@ -3,4 +3,15 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+# For future mailing on successful sign_up
+  def confirm!
+    welcome_message
+    super
+  end
+
+  private
+
+  def welcome_message
+    UserMailer.welcome_message(self).deliver
+  end
 end
